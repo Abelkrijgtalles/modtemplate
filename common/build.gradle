@@ -1,5 +1,7 @@
-architectury { common("fabric", "forge") }
-loom { mixin { defaultRefmapName = "examplemod.refmap.json" } }
+architectury {
+    common("fabric", "forge", "neoforge")
+}
+loom { mixin { defaultRefmapName = "balls.refmap.json" } }
 
 dependencies {
     modImplementation "net.fabricmc:fabric-loader:${rootProject.fabric}"

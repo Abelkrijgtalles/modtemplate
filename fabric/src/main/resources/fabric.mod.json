@@ -13,14 +13,16 @@
   "icon": "assets/examplemod/icon.png",
   "environment": "*",
   "entrypoints": {
-    "main": ["straywave.minecraft.examplemod.fabric.Entrypoint"],
-    "client": ["straywave.minecraft.examplemod.fabric.EntrypointClient"],
-    "server": ["straywave.minecraft.examplemod.fabric.EntrypointDedicatedServer"]
+    "main": [
+      "nl.abelkrijgtalles.balls.fabric.Entrypoint"
+    ],
+    "client": [
+      "nl.abelkrijgtalles.balls.fabric.specialentrypoints.EntrypointClient"
+    ],
+    "server": [
+      "nl.abelkrijgtalles.balls.fabric.specialentrypoints.EntrypointDedicatedServer"
+    ]
   },
-  "mixins": [
-    "examplemod.mixins.json",
-    "examplemod.fabric.mixins.json"
-  ],
   "depends": {
     "fabric": ">=${fabricVersion}",
     "minecraft": "${minecraftVersion}"
