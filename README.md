@@ -1,5 +1,7 @@
-Straywave's Mod Template
+Abel's Mod Template
 ========================
+
+### Fork of [Straywave's Mod Template](https://github.com/Straywave/ModTemplate).
 
 A template that lets you build Minecraft mods for multiple versions and multiple loaders at the same time. Note that
 Architectury API is *not* included, the only default dependency is Fabric API (on Fabric, obviously). A GitHub Workflow
