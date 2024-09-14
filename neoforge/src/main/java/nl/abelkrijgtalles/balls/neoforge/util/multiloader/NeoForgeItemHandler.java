@@ -1,4 +1,4 @@
-package nl.abelkrijgtalles.balls.forge.util.multiloader;
+package nl.abelkrijgtalles.balls.neoforge.util.multiloader;
 
 import net.minecraft.world.item.CreativeModeTab;
 import java.util.HashMap;

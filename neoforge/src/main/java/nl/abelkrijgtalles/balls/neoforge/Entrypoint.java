@@ -1,4 +1,4 @@
-package nl.abelkrijgtalles.balls.forge;
+package nl.abelkrijgtalles.balls.neoforge;
 
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -15,16 +15,16 @@ import net.neoforged.fml.loading.FMLEnvironment;
 import net.neoforged.neoforge.common.ModConfigSpec;
 import net.neoforged.neoforge.common.NeoForge;
 import nl.abelkrijgtalles.balls.Balls;
-import nl.abelkrijgtalles.balls.forge.specialentrypoints.EntrypointClient;
-import nl.abelkrijgtalles.balls.forge.specialentrypoints.EntrypointDedicatedServer;
-import nl.abelkrijgtalles.balls.forge.util.multiloader.NeoForgeItemHandler;
+import nl.abelkrijgtalles.balls.neoforge.specialentrypoints.EntrypointClient;
+import nl.abelkrijgtalles.balls.neoforge.specialentrypoints.EntrypointDedicatedServer;
+import nl.abelkrijgtalles.balls.neoforge.util.multiloader.NeoForgeItemHandler;
 
 @Mod("balls")
 public class Entrypoint {
     public Entrypoint(IEventBus modEventBus, ModContainer modContainer) {
         // Code here will run on both physical client and server.
         // Client classes may or may not be available - be careful!
-        Balls.LOGGER.info("Running on Forge.");
+        Balls.LOGGER.info("Running on NeoForge.");
 
         // some forge startup stuff
         modEventBus.addListener(this::commonSetup);

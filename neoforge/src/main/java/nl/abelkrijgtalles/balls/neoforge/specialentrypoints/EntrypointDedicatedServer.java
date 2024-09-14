@@ -1,4 +1,4 @@
-package nl.abelkrijgtalles.balls.forge.specialentrypoints;
+package nl.abelkrijgtalles.balls.neoforge.specialentrypoints;
 
 import nl.abelkrijgtalles.balls.InitBallsDedicatedServer;
 

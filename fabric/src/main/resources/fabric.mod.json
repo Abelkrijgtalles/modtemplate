@@ -10,7 +10,7 @@
     "issues": "${issueTrackerUrl}"
   },
   "license": "${license}",
-  "icon": "assets/examplemod/icon.png",
+  "icon": "assets/balls/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [

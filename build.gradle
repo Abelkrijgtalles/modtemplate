@@ -12,7 +12,7 @@ file("props/${rootProject.minecraft}.properties").withInputStream { project.prop
 println()
 println "Minecraft: ${rootProject.minecraft} (Java ${project.props.java})"
 println "├── Parchment: ${project.props.mappings}"
-println "├── Fabric: ${project.props.fabric}"
+println "├── Fabric (API): ${project.fabric} (${project.props.fabric})"
 println "└── Forge: ${project.props.forge}"
 println "└── NeoForge: ${project.props.neoforge}"
 println()

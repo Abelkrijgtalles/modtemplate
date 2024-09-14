@@ -7,4 +7,14 @@ pluginManagement {
     }
 }
 
-include "common", "fabric", "forge", "neoforge"
+ext.set("props", new Properties())
+file("props/${ext.minecraft}.properties").withInputStream { ext.props.load(it) }
+
+String neoforge = ""
+
+if (ext.props.neoforge != null)
+{
+    neoforge = "neoforge"
+}
+
+include "common", "fabric", "forge", neoforge
