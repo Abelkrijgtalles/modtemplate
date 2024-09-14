@@ -5,7 +5,7 @@ cd /d "%~dp0"
 
 set "versions="
 
-echo De volgende versies worden verwerkt:
+echo Forgot to translate:
 
 for %%f in (props\*.properties) do (
     set "filename=%%~nf"
