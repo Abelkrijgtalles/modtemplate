@@ -8,7 +8,7 @@ is also included to help automate building and testing for pull requests.
 ## Usage
 
 You should know how to use Architectury before using this. In short, Architectury splits up your codebase between 3
-sub-projects, `common`, `fabric`, `forge`. Common is where the loader-agnostic code is, Fabric and Forge contain code
+sub-projects, `common`, `fabric`, `forge`, `neoforge`. Common is where the loader-agnostic code is, Fabric and Forge contain code
 for the respective mod loader.
 
 Obviously, not all logic is the same across versions, so that's where Manifold comes in.
@@ -16,7 +16,7 @@ Obviously, not all logic is the same across versions, so that's where Manifold c
 [Manifold][1] is a neat little Gradle plugin that, among other things, adds a preprocessor to Java. It brings the C-like
 syntax of `#if`, `#elif`, `#else`, and `#endif` to Java.
 
-By default, there are 3 versions, 1.18.2, 1.19.2, and 1.20.1. You can write version-specific code like so:
+By default, there are all Minecraft versions between 1.19.2-1.21 (excluding 1.20 & 1.20.5) & 1.18.2. You can write version-specific code like so:
 
 ```c
 if MC_1_18_2
@@ -38,7 +38,7 @@ So, in short, after cloning this repo:
 Some general usage guidance:
 
 - Don't touch `build.properties`. It is auto generated and should be synced with current mappings.
-- Use `-Pminecraft=1.18.2`, (or `1.19.2`/`1.20.1`) to specify the target version on the command line.
+- Use `-Pminecraft=1.18.2`, (or any version like `1.19.2` or `1.20.1`) to specify the target version on the command line.
 
 ## Adding a new version
 
